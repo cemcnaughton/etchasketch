@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<link href='css/style.css'rel='stylesheet' type='text/css'>
+		<script  type="text/javascript" src="js/etch.js"></script>
+	</head>
+	<body>
+
+		<canvas height="1000px" width="1000px" id="canvas" contenteditable="true"></canvas>
+
+		<div class="center" >
+			<label>Speed:</label>
+			<input type="range" 
+					min="1"
+					max="5"
+					step="1"
+					value="3"			
+					id="speed"
+			/>
+			<span id="speed-display"></span>
+		</div>
+
+		<div class="center" >
+			<label>Thickness:</label>
+			<input type="range" 
+					min="1"
+					max="5"
+					step="1"
+					value="1"			
+					id="thick"
+			/>
+			<span id="thick-display"></span>
+		</div>
+		
+			<button id="clear" class="" onclick="clear()" >Shake</button>
+	</body>
+</html>
